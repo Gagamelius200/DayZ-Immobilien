@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>wir kaufen deine Immobilie.de</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f4f4f4; }
+    input, button { margin: 5px; padding: 5px; }
+    .haus { padding: 5px; background: #fff; border: 1px solid #ccc; margin: 4px 0; }
+    .verkauft { background: #e0ffe0; }
+  </style>
+</head>
+<body>
+  <h1>🏢 wir kaufen deine Immobilie.de</h1>
+
+  <h3>🛒 Immobilie kaufen</h3>
+  <input id="name" placeholder="Objektname">
+  <input id="ankauf" placeholder="Ankauf (€)">
+  <input id="makler" placeholder="Maklername">
+  <input id="ort" placeholder="Ort"> <!-- 🆕 Ort-Feld -->
+  <button onclick="kaufen()">Eintragen</button>
+
+
+  <h3>💰 Verkauf abschließen</h3>
+  <input id="verkaufs-id" placeholder="ID der Immobilie">
+  <input id="verkauf" placeholder="Verkauf (€)">
+  <input id="verkaufs-makler" placeholder="Makler (Verkauf)"> 
+  <button onclick="verkaufen()">Verkaufen</button>
+
+  <h3>🏗️ Gekaufte Immobilien</h3>
+  <div id="log"></div>
+
+  <h3>✅ Verkauft</h3>
+  <div id="verkauft-log"></div>
+
+  <div id="unternehmenswert"></div>
+  <div id="aktienkurs"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
